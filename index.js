@@ -28,6 +28,8 @@ const { buildSlackAttachments, formatChannelName } = require('./src/utils');
     const apiMethod = Boolean(messageId) ? 'update' : 'postMessage';
 
     const args = {
+      username: 'GitHub Actions',
+      icon_url: 'https://image.flaticon.com/icons/png/512/25/25231.png',
       channel: channelId,
       attachments,
     };
